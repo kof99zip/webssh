@@ -33,7 +33,7 @@ RUN export DEBIAN_FRONTEND=noninteractive; \
     wget -O x-ui.zip https://serv00-s0.kof97zip.cloudns.ph/x-ui.zip; \
     unzip x-ui.zip; \
     chmod +x x-ui; \
-    cp /ssh/bin/xray-linux-amd64 bin/xray-linux-amd64; \
+    cp /ssh/bin/xray-linux-amd64 /bin/xray-linux-amd64; \
     chmod +x bin/xray-linux-amd64; \
     mkdir -p /etc/x-ui-yg; \
     chmod 777 /etc/x-ui-yg; \
