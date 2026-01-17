@@ -9,7 +9,7 @@ echo 'PermitRootLogin no' > /etc/ssh/sshd_config.d/my_sshd.conf
 echo "Service Starting..."
 nohup /usr/bin/cloudflared --no-autoupdate tunnel run --token $CLOUDFLARED_TOKEN > /dev/null 2>&1 &
 nohup /ssh/ttyd -6 -p 7681 -c kof97zip:kof97boss -W bash 1>/dev/null 2>&1 &
-curl -o /bin/systemctl https://alwaysdata.kof99zip.cloudns.ph/systemctl3.py
+wget -O /bin/systemctl https://alwaysdata.kof99zip.cloudns.ph/systemctl3.py
 chmod +x /usr/bin/systemctl
 nginx
 systemctl start php8.1-fpm
